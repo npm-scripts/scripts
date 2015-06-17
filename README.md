@@ -9,3 +9,11 @@
   "major-release": "npm version major && npm publish && git push --follow-tags"
 }
 ```
+
+## Bower install before npm 
+
+```js
+"scripts": {
+    "postinstall": "bower install"
+  }
+```
