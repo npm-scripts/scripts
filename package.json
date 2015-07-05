@@ -1,0 +1,26 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "collection of npm scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm-scripts/scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "scripts"
+  ],
+  "author": "schtoeffel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm-scripts/scripts/issues"
+  },
+  "homepage": "https://github.com/npm-scripts/scripts#readme",
+  "devDependencies": {
+    "doxie": "^0.2.2"
+  }
+}
