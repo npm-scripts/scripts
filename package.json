@@ -1,0 +1,33 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "collection of npm scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-readme": "doxie --render --output < ./scripts.json --inject into README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm-scripts/scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "scripts"
+  ],
+  "contributors": [
+    "hemanth",
+    "schtoeffel"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm-scripts/scripts/issues"
+  },
+  "homepage": "https://github.com/npm-scripts/scripts#readme",
+  "devDependencies": {
+    "doxie": "^0.2.2",
+    "doxie.inject": "^0.1.1",
+    "doxie.output": "^0.3.0",
+    "doxie.render": "^0.3.0"
+  }
+}
