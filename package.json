@@ -14,7 +14,10 @@
     "npm",
     "scripts"
   ],
-  "author": "schtoeffel",
+  "contributors": [
+    "hemanth",
+    "schtoeffel"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/npm-scripts/scripts/issues"
