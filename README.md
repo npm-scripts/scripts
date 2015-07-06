@@ -54,7 +54,7 @@ Pushs a folder (f.e. `docs`) to the `gh-pages` branch.
 
 ## develop
 
-Watch JS files and run `npm test` on every change.
+Watch JS files and run `npm test` on every change. Remember to `npm install --save-dev nodangel` before using this.
 
 ```js
 "scripts": {

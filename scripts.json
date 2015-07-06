@@ -53,7 +53,7 @@
     ]
   }, {
     "title": "develop",
-    "description": "Watch JS files and run `npm test` on every change.",
+    "description": "Watch JS files and run `npm test` on every change. Remember to `npm install --save-dev nodangel` before using this.",
     "key": "develop",
     "script": "nodangel --ignore node_modules --ignore coverage --exec 'npm run --silent test'",
     "keywords": [
