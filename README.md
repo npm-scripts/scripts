@@ -52,5 +52,15 @@ Pushs a folder (f.e. `docs`) to the `gh-pages` branch.
 }
 ```
 
+## develop
+
+Watch JS files and run `npm test` on every change.
+
+```js
+"scripts": {
+  "develop: "nodangel --ignore node_modules --ignore coverage --exec 'npm run --silent test'"
+}
+```
+
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end -->
