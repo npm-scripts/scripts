@@ -62,5 +62,15 @@ Watch JS files and run `npm test` on every change. Remember to `npm install --sa
 }
 ```
 
+## Diffy JSON
+
+Make the package.json more diff-friendly. Remember to `npm install --save-dev format-json mve` before adding this script. You can add it to `postversion` as well.
+
+```js
+"scripts": {
+  "postinstall: "format-json package.json > .temp; mve .temp package.json"
+}
+```
+
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end -->

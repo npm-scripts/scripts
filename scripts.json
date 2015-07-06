@@ -60,5 +60,15 @@
       "test",
       "workflow"
     ]
+  }, {
+    "title": "Diffy JSON",
+    "description": "Make the package.json more diff-friendly. Remember to `npm install --save-dev format-json mve` before adding this script. You can add it to `postversion` as well.",
+    "key": "postinstall",
+    "script": "format-json package.json > .temp; mve .temp package.json",
+    "keywords": [
+      "npm",
+      "pretty",
+      "formatting"
+    ]
   }
 ]
