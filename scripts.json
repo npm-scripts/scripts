@@ -1,64 +1,62 @@
-[
-  {
-    "title": "minor-release",
-    "description": "Publish a minor release of a package",
-    "key": "minor-release",
-    "script": "npm version patch && npm publish && git push --follow-tags",
-    "keywords": [
-      "npm",
-      "release",
-      "push",
-      "publish"
+[ { "title": "minor-release"
+  , "description": "Publish a minor release of a package"
+  , "key": "minor-release"
+  , "script": "npm version patch && npm publish && git push --follow-tags"
+  , "keywords":
+    [ "npm"
+    , "release"
+    , "push"
+    , "publish"
     ]
-  }, {
-    "title": "patch-release",
-    "description": "Publish a patch release of a package",
-    "key": "patch-release",
-    "script": "npm version patch && npm publish && git push --follow-tags",
-    "keywords": [
-      "npm",
-      "release",
-      "push",
-      "publish"
+  }
+, { "title": "patch-release"
+  , "description": "Publish a patch release of a package"
+  , "key": "patch-release"
+  , "script": "npm version patch && npm publish && git push --follow-tags"
+  , "keywords":
+    [ "npm"
+    , "release"
+    , "push"
+    , "publish"
     ]
-  }, {
-    "title": "major-release",
-    "description": "Publish a major release of a package",
-    "key": "major-release",
-    "script": "npm version major && npm publish && git push --follow-tags",
-    "keywords": [
-      "npm",
-      "release",
-      "push",
-      "publish"
+  }
+, { "title": "major-release"
+  , "description": "Publish a major release of a package"
+  , "key": "major-release"
+  , "script": "npm version major && npm publish && git push --follow-tags"
+  , "keywords":
+    [ "npm"
+    , "release"
+    , "push"
+    , "publish"
     ]
-  }, {
-    "title": "Bower postinstall",
-    "description": "Bower install before npm",
-    "key": "postinstall",
-    "script": "bower install",
-    "keywords": [
-      "npm",
-      "bower",
-      "postinstall"
+  }
+, { "title": "Bower postinstall"
+  , "description": "Bower install before npm"
+  , "key": "postinstall"
+  , "script": "bower install"
+  , "keywords":
+    [ "npm"
+    , "bower"
+    , "postinstall"
     ]
-  }, {
-    "title": "gh-pages",
-    "description": "Pushs a folder (f.e. `docs`) to the `gh-pages` branch.",
-    "key": "update-gh-pages",
-    "script": "git push origin `git subtree split --prefix docs master`:gh-pages --force",
-    "keywords": [
-      "npm",
-      "gh-pages"
+  }
+, { "title": "gh-pages"
+  , "description": "Pushs a folder (f.e. `docs`) to the `gh-pages` branch."
+  , "key": "update-gh-pages"
+  , "script": "git push origin `git subtree split --prefix docs master`:gh-pages --force"
+  , "keywords":
+    [ "npm"
+    , "gh-pages"
     ]
-  }, {
-    "title": "develop",
-    "description": "Watch JS files and run `npm test` on every change. Remember to `npm install --save-dev nodangel` before using this.",
-    "key": "develop",
-    "script": "nodangel --ignore node_modules --ignore coverage --exec 'npm run --silent test'",
-    "keywords": [
-      "test",
-      "workflow"
+  }
+, { "title": "develop"
+  , "description": "Watch JS files and run `npm test` on every change. Remember to `npm install --save-dev nodangel` before using this."
+  , "key": "develop"
+  , "script": "nodangel --ignore node_modules --ignore coverage --exec 'npm run --silent test'"
+  , "keywords":
+    [ "test"
+    , "workflow"
     ]
   }
 ]
