@@ -7,9 +7,11 @@
 * [minor-release](https://github.com/npm-scripts/scripts#minor-release)
 * [patch-release](https://github.com/npm-scripts/scripts#patch-release)
 * [major-release](https://github.com/npm-scripts/scripts#major-release)
+* [clean-up](https://github.com/npm-scripts/scripts#clean-up)
 * [Bower postinstall](https://github.com/npm-scripts/scripts#Bower postinstall)
 * [gh-pages](https://github.com/npm-scripts/scripts#gh-pages)
 * [develop](https://github.com/npm-scripts/scripts#develop)
+* [Diffy JSON](https://github.com/npm-scripts/scripts#Diffy JSON)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
