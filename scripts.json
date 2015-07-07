@@ -82,5 +82,17 @@
       "pretty",
       "formatting"
     ]
+  }, {
+    "title": "ensure-clean-repo",
+    "description": "Ensure there are no uncommitted files in your git repo. Otherwise fail with a helpful message.",
+    "key": "ensure-clean-repo",
+    "script": "if [ -n \"$(git status --porcelain)\" ]; then echo 'Ooops-a-daisy! Make sure the repo is clean.'; exit 1; fi",
+    "keywords": [
+      "git",
+      "release",
+      "push",
+      "publish",
+      "clean"
+    ]
   }
 ]

@@ -12,6 +12,7 @@
 * [gh-pages](https://github.com/npm-scripts/scripts#gh-pages)
 * [develop](https://github.com/npm-scripts/scripts#develop)
 * [diffy-package](https://github.com/npm-scripts/scripts#diffy-package)
+* [ensure-clean-repo](https://github.com/npm-scripts/scripts#ensure-clean-repo)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
@@ -96,6 +97,16 @@ Make the package.json more diff-friendly. Remember to `npm install --save-dev fo
 ```json
 "scripts": {
   "diffy-package": "format-json package.json > .temp; mve .temp package.json"
+}
+```
+
+## ensure-clean-repo
+
+Ensure there are no uncommitted files in your git repo. Otherwise fail with a helpful message.
+
+```json
+"scripts": {
+  "ensure-clean-repo": "if [ -n \"$(git status --porcelain)\" ]; then echo 'Ooops-a-daisy! Make sure the repo is clean.'; exit 1; fi"
 }
 ```
 
