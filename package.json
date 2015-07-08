@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create-readme": "doxie --render --output < ./scripts.json --inject into README.md"
+    "create-readme": "doxie --render --output < ./scripts.json --inject into README.md",
+    "precommit": "npm run create-readme && git add README.md"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "doxie": "^0.2.2",
     "doxie.inject": "^0.1.1",
     "doxie.output": "^0.3.0",
-    "doxie.render": "^0.3.0"
+    "doxie.render": "^0.3.0",
+    "husky": "^0.8.1"
   }
 }
