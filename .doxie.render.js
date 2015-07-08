@@ -8,7 +8,7 @@ var render = function(data) {
     '',
     '```js',
     '"scripts": {',
-    '  "' + data.key + ': "' + data.script + '"',
+    '  "' + data.key + '": "' + data.script + '"',
     '}',
     '```',
     '\n'
