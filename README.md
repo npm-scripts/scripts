@@ -73,13 +73,13 @@ Watch JS files and run `npm test` on every change. Remember to `npm install --sa
 }
 ```
 
-## Diffy JSON
+## diffy-package
 
-Make the package.json more diff-friendly. Remember to `npm install --save-dev format-json mve` before adding this script. You can add it to `postversion` as well.
+Make the package.json more diff-friendly. Remember to `npm install --save-dev format-json mve` before adding this script. Add `"postversion": "npm run diffy-package"` as well to auto-format the package file after a version bump. Add `"postinstall": "npm run diffy-package"` if you’re not writing a library – your package file will be reformatted every time you run `npm install --save`.
 
 ```js
 "scripts": {
-  "postinstall: "format-json package.json > .temp; mve .temp package.json"
+  "diffy-package: "format-json package.json > .temp; mve .temp package.json"
 }
 ```
 
