@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "npm run create-readme && git add README.md",
-    "create-readme": "doxie --render < ./scripts.json --inject into README.md",
-    "create-toc": "doxie --render .doxie.render.toc.js < ./scripts.json --inject into README.md as toc",
-    "generate": "npm run create-readme; npm run create-toc"
+    "precommit": "npm run update-readme && git add README.md",
+    "update-readme": "echo 'Updating the readme…'; doxie --render < ./scripts.json --inject into README.md && echo '…done!'",
+    "update-toc": "echo 'Updating the table of contents…'; doxie --render .doxie.render.toc.js < ./scripts.json --inject into README.md as toc && echo '…done!'",
+    "generate": "npm run update-readme; npm run update-toc"
   },
   "repository": {
     "type": "git",
