@@ -1,7 +1,7 @@
 function escapeStr(str) {
   return str
-      .replace(/\"/g, '\\\\"')
-      .replace(/\n/g, '\\\\n');
+      .replace(/\"/g, '\\"')
+      .replace(/\n/g, '\\n');
 }
 
 var render = function(data) {

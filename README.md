@@ -55,7 +55,7 @@ Clean your git repo state. All dirty files will be moved to the stash. It’s us
 
 ```json
 "scripts": {
-  "clean-up": "git reset && echo '/node_modules/' > .gitignore && git add .gitignore && git stash save --include-untracked --keep-index '`npm run clean-up` trash can' && git clean --force -d && git reset --hard && echo '\\nclean-up: All unstaged and ignored files within your git repo – except node_modules/* – have been moved to the stash. To restore them run `git stash pop --quiet; git checkout .gitignore`."
+  "clean-up": "git reset && echo '/node_modules/' > .gitignore && git add .gitignore && git stash save --include-untracked --keep-index '`npm run clean-up` trash can' && git clean --force -d && git reset --hard && echo '\nclean-up: All unstaged and ignored files within your git repo – except node_modules/* – have been moved to the stash. To restore them run `git stash pop --quiet; git checkout .gitignore`."
 }
 ```
 
