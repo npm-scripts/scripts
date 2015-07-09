@@ -1,3 +1,9 @@
+function escapeStr(str) {
+  return str
+      .replace(/\"/g, '\\\\"')
+      .replace(/\n/g, '\\\\n');
+}
+
 var render = function(data) {
   var data = data.data;
 
@@ -6,9 +12,9 @@ var render = function(data) {
     '',
     data.description,
     '',
-    '```js',
+    '```json',
     '"scripts": {',
-    '  "' + data.key + '": "' + data.script + '"',
+    '  "' + data.key + '": "' + escapeStr(data.script) + '"',
     '}',
     '```',
     '\n'
