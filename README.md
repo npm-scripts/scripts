@@ -11,7 +11,7 @@
 * [Bower postinstall](https://github.com/npm-scripts/scripts#Bower postinstall)
 * [gh-pages](https://github.com/npm-scripts/scripts#gh-pages)
 * [develop](https://github.com/npm-scripts/scripts#develop)
-* [Diffy JSON](https://github.com/npm-scripts/scripts#Diffy JSON)
+* [diffy-package](https://github.com/npm-scripts/scripts#diffy-package)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->

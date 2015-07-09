@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "npm run update-readme && git add README.md",
+    "precommit": "npm run generate && git add README.md",
     "update-readme": "echo 'Updating the readme…'; doxie --render < ./scripts.json --inject into README.md && echo '…done!'",
     "update-toc": "echo 'Updating the table of contents…'; doxie --render .doxie.render.toc.js < ./scripts.json --inject into README.md as toc && echo '…done!'",
     "generate": "npm run update-readme; npm run update-toc"
