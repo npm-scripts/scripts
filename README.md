@@ -4,8 +4,8 @@
 
 <!-- @doxie.inject start toc -->
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
-* [minor-release](https://github.com/npm-scripts/scripts#minor-release)
 * [patch-release](https://github.com/npm-scripts/scripts#patch-release)
+* [minor-release](https://github.com/npm-scripts/scripts#minor-release)
 * [major-release](https://github.com/npm-scripts/scripts#major-release)
 * [clean-up](https://github.com/npm-scripts/scripts#clean-up)
 * [Bower postinstall](https://github.com/npm-scripts/scripts#Bower postinstall)
@@ -19,16 +19,6 @@
 
 <!-- @doxie.inject start -->
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
-## minor-release
-
-Publish a minor release of a package
-
-```json
-"scripts": {
-  "minor-release": "npm version patch && npm publish && git push --follow-tags"
-}
-```
-
 ## patch-release
 
 Publish a patch release of a package
@@ -36,6 +26,16 @@ Publish a patch release of a package
 ```json
 "scripts": {
   "patch-release": "npm version patch && npm publish && git push --follow-tags"
+}
+```
+
+## minor-release
+
+Publish a minor release of a package
+
+```json
+"scripts": {
+  "minor-release": "npm version minor && npm publish && git push --follow-tags"
 }
 ```
 
