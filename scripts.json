@@ -1,8 +1,8 @@
 [
   {
-    "title": "minor-release",
-    "description": "Publish a minor release of a package",
-    "key": "minor-release",
+    "title": "patch-release",
+    "description": "Publish a patch release of a package",
+    "key": "patch-release",
     "script": "npm version patch && npm publish && git push --follow-tags",
     "keywords": [
       "npm",
@@ -11,10 +11,10 @@
       "publish"
     ]
   }, {
-    "title": "patch-release",
-    "description": "Publish a patch release of a package",
-    "key": "patch-release",
-    "script": "npm version patch && npm publish && git push --follow-tags",
+    "title": "minor-release",
+    "description": "Publish a minor release of a package",
+    "key": "minor-release",
+    "script": "npm version minor && npm publish && git push --follow-tags",
     "keywords": [
       "npm",
       "release",
