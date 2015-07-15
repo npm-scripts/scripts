@@ -2,7 +2,7 @@
   "name": "scripts",
   "version": "1.0.0",
   "description": "collection of npm scripts",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "npm run generate && git add README.md",
