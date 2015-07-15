@@ -1,9 +1,6 @@
 ## Easy steps:
 
-* Clone this [repo](https://github.com/npm-scripts/scripts.git):
-  ```sh
-  $ git clone https://github.com/npm-scripts/scripts.git
-  ```
+* [Fork](https://github.com/npm-scripts/scripts/network) the repo.
 
 * Install the deps:
  ```sh
