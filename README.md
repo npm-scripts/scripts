@@ -8,7 +8,7 @@
 * [minor-release](https://github.com/npm-scripts/scripts#minor-release)
 * [major-release](https://github.com/npm-scripts/scripts#major-release)
 * [clean-up](https://github.com/npm-scripts/scripts#clean-up)
-* [Bower postinstall](https://github.com/npm-scripts/scripts#Bower postinstall)
+* [Bower postinstall](https://github.com/npm-scripts/scripts#bower-postinstall)
 * [gh-pages](https://github.com/npm-scripts/scripts#gh-pages)
 * [develop](https://github.com/npm-scripts/scripts#develop)
 * [diffy-package](https://github.com/npm-scripts/scripts#diffy-package)
