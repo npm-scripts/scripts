@@ -97,5 +97,15 @@
       "format-json",
       "sponge"
     ]
+  }, {
+    "title": "push tags",
+    "description": "Git push relevant annotated tags when pushing branches out.",
+    "key": "push",
+    "script": "git push --follow-tags",
+    "keywords": [
+      "git",
+      "push"
+    ],
+    "dependencies": []
   }
 ]

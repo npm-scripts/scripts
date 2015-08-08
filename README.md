@@ -12,6 +12,7 @@
 * [gh-pages](https://github.com/npm-scripts/scripts#gh-pages)
 * [develop](https://github.com/npm-scripts/scripts#develop)
 * [diffy-package](https://github.com/npm-scripts/scripts#diffy-package)
+* [push tags](https://github.com/npm-scripts/scripts#push-tags)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
@@ -107,6 +108,16 @@ Make the package.json more diff-friendly. Remember to install the dependencies b
 
 
 Install the dependencies `npm i format-json sponge --save-dev`
+
+## push tags
+
+Git push relevant annotated tags when pushing branches out.
+
+```json
+"scripts": {
+  "push": "git push --follow-tags"
+}
+```
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end -->
