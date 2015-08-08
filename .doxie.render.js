@@ -7,7 +7,7 @@ function escapeStr(str) {
 var render = function(data) {
   var data = data.data;
 
-  return [
+  var doc = [
     '## ' + data.title,
     '',
     data.description,
@@ -17,8 +17,18 @@ var render = function(data) {
     '  "' + data.key + '": "' + escapeStr(data.script) + '"',
     '}',
     '```',
+    '\n',
+  ];
+
+  if (data.dependencies.length > 0) {
+
+    doc = doc.concat([
+    'Install the dependencies `npm i ' + data.dependencies.join(' ') + ' --save-dev`',
     '\n'
-  ].join('\n');
+    ]);
+  }
+
+  return doc.join('\n');
 };
 
 module.exports = render;

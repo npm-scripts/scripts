@@ -69,6 +69,9 @@ Bower install before npm
 }
 ```
 
+
+Install the dependencies `npm i bower --save-dev`
+
 ## gh-pages
 
 Pushs a folder (f.e. `docs`) to the `gh-pages` branch.
@@ -81,7 +84,7 @@ Pushs a folder (f.e. `docs`) to the `gh-pages` branch.
 
 ## develop
 
-Watch JS files and run `npm test` on every change. Remember to `npm install --save-dev nodangel` before using this.
+Watch JS files and run `npm test` on every change. Remember to install the dependencies before using this.
 
 ```json
 "scripts": {
@@ -89,15 +92,21 @@ Watch JS files and run `npm test` on every change. Remember to `npm install --sa
 }
 ```
 
+
+Install the dependencies `npm i nodangel --save-dev`
+
 ## diffy-package
 
-Make the package.json more diff-friendly. Remember to `npm install --save-dev format-json sponge` before adding this script. Add `"postversion": "npm run diffy-package"` as well to auto-format the package file after a version bump. Add `"postinstall": "npm run diffy-package"` if you’re not writing a library – your package file will be reformatted every time you run `npm install --save`.
+Make the package.json more diff-friendly. Remember to install the dependencies before adding this script. Add `"postversion": "npm run diffy-package"` as well to auto-format the package file after a version bump. Add `"postinstall": "npm run diffy-package"` if you’re not writing a library – your package file will be reformatted every time you run `npm install --save`.
 
 ```json
 "scripts": {
   "diffy-package": "format-json package.json | sponge package.json"
 }
 ```
+
+
+Install the dependencies `npm i format-json sponge --save-dev`
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end -->

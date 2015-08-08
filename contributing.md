@@ -18,6 +18,9 @@
   "keywords": [
     "npm",
     "<so_on"
+  ],
+  "dependencies: [
+    "all-deps"
   ]
 }
 ```
