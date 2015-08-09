@@ -20,7 +20,7 @@ var render = function(data) {
     '\n',
   ];
 
-  if (data.dependencies.length > 0) {
+  if (data.dependencies && data.dependencies.length > 0) {
 
     doc = doc.concat([
     'Install the dependencies `npm i ' + data.dependencies.join(' ') + ' --save-dev`',
