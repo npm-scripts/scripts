@@ -9,8 +9,7 @@
       "release",
       "push",
       "publish"
-    ],
-    "dependencies": []
+    ]
   }, {
     "title": "minor-release",
     "description": "Publish a minor release of a package",
@@ -21,8 +20,7 @@
       "release",
       "push",
       "publish"
-    ],
-    "dependencies": []
+    ]
   }, {
     "title": "major-release",
     "description": "Publish a major release of a package",
@@ -33,8 +31,7 @@
       "release",
       "push",
       "publish"
-    ],
-    "dependencies": []
+    ]
   }, {
     "title": "clean-up",
     "description": "Clean your git repo state. All dirty files will be moved to the stash. It’s useful when transpiling code before publishing to NPM.",
@@ -46,8 +43,7 @@
       "push",
       "publish",
       "clean"
-    ],
-    "dependencies": []
+    ]
   }, {
     "title": "Bower postinstall",
     "description": "Bower install before npm",
@@ -69,8 +65,7 @@
     "keywords": [
       "npm",
       "gh-pages"
-    ],
-    "dependencies": []
+    ]
   }, {
     "title": "develop",
     "description": "Watch JS files and run `npm test` on every change. Remember to install the dependencies before using this.",
@@ -96,6 +91,15 @@
     "dependencies": [
       "format-json",
       "sponge"
+    ]
+  }, {
+    "title": "push tags",
+    "description": "Git push relevant annotated tags when pushing branches out.",
+    "key": "push",
+    "script": "git push --follow-tags",
+    "keywords": [
+      "git",
+      "push"
     ]
   }
 ]
