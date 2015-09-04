@@ -13,6 +13,7 @@
 * [develop](https://github.com/npm-scripts/scripts#develop)
 * [diffy-package](https://github.com/npm-scripts/scripts#diffy-package)
 * [push tags](https://github.com/npm-scripts/scripts#push-tags)
+* [changelog](https://github.com/npm-scripts/scripts#changelog)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
@@ -118,6 +119,19 @@ Git push relevant annotated tags when pushing branches out.
   "push": "git push --follow-tags"
 }
 ```
+
+## changelog
+
+Generate a changelog from git metadata.
+
+```json
+"scripts": {
+  "conventional-changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"
+}
+```
+
+
+Install the dependencies `npm i conventional-changelog --save-dev`
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end -->
