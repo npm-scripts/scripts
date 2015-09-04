@@ -14,6 +14,7 @@
 * [diffy-package](https://github.com/npm-scripts/scripts#diffy-package)
 * [push tags](https://github.com/npm-scripts/scripts#push-tags)
 * [changelog](https://github.com/npm-scripts/scripts#changelog)
+* [github-release](https://github.com/npm-scripts/scripts#github-release)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
@@ -132,6 +133,19 @@ Generate a changelog from git metadata.
 
 
 Install the dependencies `npm i conventional-changelog --save-dev`
+
+## github-release
+
+Make a new GitHub release from git metadata.
+
+```json
+"scripts": {
+  "conventional-github-releaser": "conventional-github-releaser -p angular"
+}
+```
+
+
+Install the dependencies `npm i conventional-github-releaser --save-dev`
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end -->

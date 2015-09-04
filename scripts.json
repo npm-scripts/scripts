@@ -112,5 +112,17 @@
     "dependencies": [
       "conventional-changelog"
     ]
+  }, {
+    "title": "github-release",
+    "description": "Make a new GitHub release from git metadata.",
+    "key": "conventional-github-releaser",
+    "script": "conventional-github-releaser -p angular",
+    "keywords": [
+      "changelog",
+      "github-release"
+    ],
+    "dependencies": [
+      "conventional-github-releaser"
+    ]
   }
 ]
