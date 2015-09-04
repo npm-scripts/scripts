@@ -19,7 +19,7 @@
     "npm",
     "<so_on"
   ],
-  "dependencies: [
+  "dependencies": [
     "all-deps"
   ]
 }
